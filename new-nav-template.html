@@ -1,0 +1,870 @@
+<!DOCTYPE HTML><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="alternate" hreflang="es" href="http://espanol.allurausa.com/" />
+<title>Allura</title>
+<link href="/css/flexslider.css" rel="stylesheet" type="text/css" />
+<link href="/css/component.css" rel="stylesheet" type="text/css" />
+<link href="/css/jQuery.thumbFx.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="/css/foundation.min.css" />
+<link rel="stylesheet" href="http://s3.amazonaws.com/impressivewebs/mega-drop-downs/styles/style.css">
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/foundation.min.js"></script>
+
+<script src="/js/vendor/modernizr.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.1/animate.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.1/noframework.waypoints.min.js"></script>
+
+<style>
+	.quick-contact-form-responsive {
+    width: 100% !important;
+    margin-right: 0px !important;
+    float: left;
+}
+	
+
+.modalbg {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 99999;
+  -moz-transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -transition-delay: 0.2s;
+  display: block;
+  pointer-events: none;
+}
+.modalbg .dialog {
+  width: 400px;
+  position: relative;
+  top: -1000px;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  background: -moz-linear-gradient(#ffffff, #cccccc);
+  background: -webkit-linear-gradient(#ffffff, #cccccc);
+  background: -o-linear-gradient(#ffffff, #cccccc);
+  box-shadow: 0 0 10px #000000;
+  -moz-box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+}
+.modalbg .dialog .ie7 {
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
+}
+.modalbg:target {
+  display: block;
+  pointer-events: auto;
+  background: rgba(4, 10, 30, 0.8);
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.modalbg:target .dialog {
+  top: -20px;
+  -moz-transition: all 0.8s ease-out;
+  -webkit-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -transition-delay: 0.4s;
+}
+.close {
+    background: #FF0005;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    height: 24px;
+    right: -12px;
+    color: #fff !important;
+    padding-top: 0px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #000000;
+    -moz-box-shadow: 0 0 10px #000000;
+    -webkit-box-shadow: 0 0 10px #000000;
+    -moz-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -transition-delay: 0.2s;
+}
+.close .ie7 {
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
+}
+.close:hover {
+  background: #00d9ff;
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+
+	
+	
+	</style>
+
+
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="fullwidth" style="background-color: #037EA1;">
+<div class="row">
+<div class="columns large-12 medium-12">
+<div style="    width: 100%;
+height: 30px;">
+
+
+<a href="#"  class="top-nav-bar right">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<a href="#"  class="top-nav-bar right">News</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<a href="#"  class="top-nav-bar right">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="header-span show-for-medium-up">
+<div class="fullwidth mega-nav">
+<div class="columns large-12 medium-12 small-12 " style="border-bottom: solid 4px #026994;background:white;">                                                                         
+<header>
+
+<div class="row">
+<div class="columns large-12">
+<div class="columns large-3">
+
+{module_contentholder,765506}                                    
+</div>
+<div class="columns large-9">
+
+<nav id="new-nav">
+<ul style="margin-top:20px;">
+
+<li class="menu"><a href="mega-product.html">Products</a></li>
+<li class="menu"><a href="mega-info.html">Info Center</a></li>
+    <li class="menu"><a href="your-allura.html" style="color: #C12E1C !important;">Your Allura</a></li>
+</ul>
+
+
+
+
+<a href="#" class="button right" style="color: #fff;
+    margin-top: -45px;
+    padding-top: 9px;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;">844-4-ALLURA<br>844-425-5872</a>
+</nav>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+</header>
+
+</div>
+
+</div>
+</div>
+
+
+<div id="dropdown" class="loading"></div><!-- #dropdown -->
+
+
+
+
+<div class="header-span-2 hide-for-medium-up">
+<div class="row header ">
+<div class="columns small-12 ">
+{module_contentholder,3285418}
+</div>
+</div>
+</div>
+
+
+<div class="fullwidth" style="background: url('http://www.allurausa.com/images/main-gallery/fiber-cement-residential/gallery-large-residential-_0000s_0003_4.jpg');
+background-size: cover;
+height: 100%;  background-position: 0px 0px; ">
+<div class="columns large-12 feature-type" >
+
+<!-- TYPE JS -->
+
+<h1 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="1">Allura gives you  <span class="txt-rotate fw700" data-period="2500" data-rotate='[ "choices", "options", "style", "durability" ]'></span></h1>
+
+<!-- TYPE JS -->
+<a class="arrow-wrap" href="#content">
+<span class="arrow"></span>
+<!--<span class="hint">scroll</span>-->
+</a>
+   
+   
+   
+    
+    
+    
+</div>
+</div>
+
+
+
+
+<!-- End Top Bar -->
+<div class="main" id="content">
+
+<a id="scrollbtn" href="#next" style="position:absolute; bottom:5px; left:50%;">
+   <img class="wow bounce" data-wow-duration="1s" data-wow-delay="4s" data-wow-iteration="4" src="http://www.happybox.lt/images/pointerdown.png" style="    width: 80px;
+    left: -50px;
+    position: relative;" alt="">
+	</a>
+   
+    
+
+<div id="sub-contatining-div" style="z-index: 9999; position: relative;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="next" class="fullwidth " style="position: relative;
+    height: 500px;
+    background: url('http://www.allurausa.com/images/FC_LapSiding_SlateWall.jpg');
+    background-size: contain;">
+<div class="columns large-12 "    style="    padding: 3% 5% 0% 5%;
+    position: relative;">
+
+
+
+{tag_pagecontent}
+</div>
+</div>
+
+
+
+
+<div class="fullwidth"  style="position: relative;
+    height: 500px;
+    background: #fff;
+    ">
+    
+<div class="columns large-12" style="padding:5%; position:relative;">
+<div class="columns large-6 medium-6 wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s" data-wow-iteration="1" ><img src="http://placehold.it/600x400" alt=""></div>
+<div class="columns large-6 medium-6 wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="1" style="text-align:center;">
+	<h1 style="font-family: Lato,sans-serif;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.4;
+">Color and Texture Innovation</h1>
+	
+	<p style="text-align:left;">
+There's more to finding the right fiber cement product than durability. Allura is the industry leader in color selection, and offers a wide range of realistic textures to capture whatever aesthetic you have in mind. Allura partners with PPG Paints to provide the best exterior siding finish in the industry. From Desert Tan to Autumn Red, our colors are scientifically formulated for longer-lasting, bolder appearance. And Through our unique manufacturing process, our grain patterns repeat less, giving cus­tomers a more realistic texture without the cost, bulk or care associated with wood product.</p>
+	
+	
+	
+	<a href="#" class="button center" style="color:#fff;">Learn More</a>
+</div>
+</div>
+</div>
+
+
+
+<div class="fullwidth">
+	<div class="columns large-12">
+		<img src="http://www.allurausa.com/images/main-gallery/fiber-cement-residential/DSC_4563.jpg" alt="" style="width:100%;">
+		
+		<span style="position:absolute; top:35%; left:40%" data-tooltip aria-haspopup="true" class="has-tip [tip-top tip-bottom tip-left tip-right] [radius round]" title="Durable fiber cement vertical panels available in cedar or stucco textures for limitless style opportunities. ">Panels (Vertical Siding)</span>
+
+		<span style="position:absolute; bottom:35%; right:25%" data-tooltip aria-haspopup="true" class="has-tip [tip-top tip-bottom tip-left tip-right] [radius round]" title="The appearance and workability of wood with the durability of fiber cement technology. ">Lap Siding</span>
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="clearboth"></div>
+<div class="fullwidth" style="    background-color: #FFFFFF;
+height: 350px;">
+<div class="">
+<div class="columns large-12" style="padding: 0px;">
+<div class="columns large-6 medium-12 wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="1" style="padding: 0;"><img src="http://www.allurausa.com/images/ppgslides/autum-red.jpg"></div>
+
+<div class="columns large-6 medium-12 wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="1" style="    padding: 70px 100px;"><p style="    font-size: 30px;
+color: #602722;
+font-weight: bold;    text-transform: uppercase;
+line-height: 1.4;">Allura features two ways to show off your best side.</p>
+
+<p>Choosing the right color will highlight the beautiful features of your home and boost the overall curb appeal. Color reflects your personality and lifestyle, from beachside blues and warm-inviting yellow to woodsy greens and browns.</p>
+<a href="#">Learn More</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="clearboth"></div>
+<div class="fullwidth wow slideInLeft" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="1" style="   height: 450px;
+background: url('http://www.allurausa.com/images/ArchitectPanels_Hinge5_sm.jpg');
+background-size: cover;
+background-position: 0px 0px;
+">
+<div class="">
+<div class="columns large-12" style="padding: 0px;">
+
+
+
+
+<div class="columns large-6 medium-12" style="
+padding: 0;
+"></div><div class="columns large-6 medium-12 wow slideInRight" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="1" style="    padding: 70px 100px;"><p style="     font-size: 30px;
+color: #FFFFFF;
+font-weight: bold;
+text-transform: uppercase;
+line-height: 1.4;
+text-shadow: 3px 3px 5px #000;">Show off your Modern &amp; Sleek Exterior</p>
+
+<p style="
+color: #fff;text-shadow: 2px 1px 5px #000;
+">Allura's Fiber Cement Architectural Panels offer sleek, striking lines of aluminum EasyTrim Reveals for a premium system that lets you create modern, cost efficient, commercial designs.</p>
+<a href="#" class="button" style="color:#fff;">Learn More</a>
+</div></div>
+</div>
+</div>
+
+<div class="clearboth"></div>
+
+<div id="quick-contact-form" style="max-width: 100%; background: #faf7ef;">
+<div id="expert" class="row quick-contact wow slideInUp fadeIn" style="text-align:center;" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="1">
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- MODAL -->
+	
+	
+	<a  href="#openModal"><h1 style="    font-family: Lato,sans-serif;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.4;">Request More Information</h1></a>
+
+<div id="openModal" class="modalbg">
+  <div class="dialog">
+  
+      <a href="#close" title="Close" class="close">X</a>
+   
+<!-- Quick Contact Content Holder -->
+
+<style>
+    .quick-contact-form-responsive {
+    width:45%; margin-right:40px; float:left;
+    }
+    input.cat_textbox, textarea.cat_listbox, select.cat_dropdown, select.cat_listbox {
+    width: 100%;
+    }
+    @media only screen and (max-width: 40em) {
+    .quick-contact-form-responsive {
+    width:100%; margin-right:20px; float:left;
+    }
+    } /* Define mobile styles */
+    @media only screen and (min-width: 1024px)
+    .quick-contact-form-responsive {
+    width: 45%;
+    margin-right: 50px;
+    float: left;
+    }
+    } /* min-width 641px, medium screens */
+</style>
+<h3 style="margin: 0px 0px 15px; color: #bf2e1a; font-size: 24px;">Request a follow-up.</h3>
+<p style="text-align:left;">Send us a message and a representative will be in touch with you.</p>
+<form name="catwebformform89849" method="post" onsubmit="return checkWholeForm89849(this)" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=380670&amp;PageID=http%3a%2f%2fwww.allurausa.com%2fcontact-us-form-submission-page&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}&amp;OPTIN=true">
+    <div class="quick-contact-form-responsive">
+      <select name="CAT_Custom_1313665" id="CAT_Custom_1313665" class=" cat_dropdown">
+    <option value=" ">Which of these best describes you?*</option>
+    <option value="Homeowner">Homeowner</option>
+    <option value="Architect">Architect</option>
+    <option value="Builder">Builder</option>
+    <option value="Contractor">Contractor</option>
+    <option value="Dealer">Dealer</option>
+    <option value="Other">Other</option>
+    </select>
+    
+    <input type="text" name="FullName" id="FullName" class="cat_textbox" maxlength="255" placeholder="Name*" />
+
+    <input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" placeholder="Email Address*" />
+    <input type="text" name="WorkPhone" id="WorkPhone" class="cat_textbox" maxlength="255" placeholder="Phone" />
+    
+    
+    <!--<input type="text" name="Company" id="Company" class="cat_textbox" maxlength="255" placeholder="Company" />
+    <input type="text" name="WorkAddress" id="WorkAddress" class="cat_textbox" maxlength="500" placeholder="Address*" />
+    <input type="text" name="WorkCity" id="WorkCity" class="cat_textbox" maxlength="255" placeholder="City*" />
+    </div>
+    -->
+    
+	</div>
+    <div class="quick-contact-form-responsive">
+
+    <input type="hidden" name="WorkState" id="WorkState" class="cat_textbox" maxlength="255" placeholder="State*" />
+    <select name="WorkflowList" id="state-workflowlist" class="zipcode-input">
+    <option value=" ">Where are you?*</option>
+    <option value="261782">ALABAMA</option>
+    <option value="261793">ALASKA</option>
+    <option value="262038">ARIZONA</option>
+    <option value="262039">ARKANSAS</option>
+    <option value="262063">CALIFORNIA NORTH</option>
+    <option value="262065">CALIFORNIA SOUTH</option>
+    <option value="262068">CANADA  EASTERN</option>
+    <option value="262069">CANADA WESTERN</option>
+    <option value="262072">COLORADO</option>
+    <option value="262075">CONNECTICUT</option>
+    <option value="302768">DC/BALTIMORE</option>
+    <option value="262077">DELAWARE</option>
+    <option value="262079">FLORIDA</option>
+    <option value="262080">GEORGIA</option>
+    <option value="262081">HAWAII</option>
+    <option value="262082">IDAHO</option>
+    <option value="262083">ILLINOIS</option>
+    <option value="302769">NORTHERN INDIANA</option>
+    <option value="302770">SOUTHERN INDIANA</option>
+    <option value="262084">INDIANA</option>
+    <option value="262085">IOWA</option>
+    <option value="262086">KANSAS</option>
+    <option value="262088">KENTUCKY</option>
+    <option value="262091">LOUISIANA</option>
+    <option value="262095">MAINE</option>
+    <option value="262097">MARYLAND</option>
+    <option value="262099">MASSACHUSETTS</option>
+    <option value="262101">MICHIGAN</option>
+    <option value="262103">MINNESOTA</option>
+    <option value="262105">MISSISSIPPI</option>
+    <option value="262106">MISSOURI</option>
+    <option value="262107">MONTANA</option>
+    <option value="262108">NEBRASKA</option>
+    <option value="262109">NEVADA</option>
+    <option value="262112">NEW HAMPSHIRE</option>
+    <option value="262113">NEW JERSEY</option>
+    <option value="262114">NEW MEXICO</option>
+    <option value="262115">NEW YORK</option>
+    <option value="262117">NORTH CAROLINA</option>
+    <option value="262118">NORTH DAKOTA</option>
+    <option value="262120">OHIO</option>
+    <option value="302771">OHIO NORTH</option>
+    <option value="302772">OHIO SOUTH</option>
+    <option value="262121">OKLAHOMA</option>
+    <option value="262122">OREGON</option>
+    <option value="262123">PENNSYLVANIA</option>
+    <option value="262124">RHODE ISLAND</option>
+    <option value="262156">SOUTH CAROLINA</option>
+    <option value="262158">SOUTH DAKOTA</option>
+    <option value="262160">TENNESSEE</option>
+    <option value="302774">TEXAS - DALLAS AREA</option>
+    <option value="302775">TEXAS - SAN ANTONIO AREA</option>
+    <option value="302776">TEXAS - HOUSTON AREA</option>
+    <option value="262161">TEXAS</option>
+    <option value="262163">UTAH</option>
+    <option value="262164">VERMONT</option>
+    <option value="262165">VIRGINIA</option>
+    <option value="262166">WASHINGTON</option>
+    <option value="262167">WEST VIRGINIA</option>
+    <option value="262168">WISCONSIN</option>
+    <option value="262169">WYOMING</option>
+
+  
+    </select>
+
+<!--    <input type="text" name="WorkZip" id="WorkZip" class="zipcode-input cat_textbox" maxlength="255" placeholder="ZIP code" />-->
+    <select name="WorkCountry" id="WorkCountry" class="cat_dropdown" style="display: none;">
+    <option value=" ">-- Select Country --</option>
+    <option value="CA">CANADA</option>
+    <option value="US" selected="selected">UNITED STATES</option>
+    </select>
+  
+<!--    <textarea name="CAT_Custom_1313666" id="CAT_Custom_1313666" cols="10" rows="10" class="cat_listbox" onkeydown="if(this.value.length&gt;=4000)this.value=this.value.substring(0,3999);" placeholder="Have questions? Need more info? Send us a message and we'll contact you ASAP." style="width: 100%; height: 100%; max-height: 137px;"></textarea>-->
+    {module_ccsecurity}
+    </div>
+    
+    
+    
+    <div class="clearboth"></div>
+    
+    
+    <input class="btn" type="submit" value="Submit" id="catwebformbutton" />
+    <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+    <script type="text/javascript">
+		//<![CDATA[
+		var submitcount89849 = 0;
+
+		function checkWholeForm89849(theForm) {
+			var why = "";
+			if (theForm.FullName) why += isEmpty(theForm.FullName.value, "Name");
+
+			if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+			if (theForm.WorkPhone) why += isEmpty(theForm.WorkPhone.value, "Phone Number");
+			if (theForm.WorkAddress) why += isEmpty(theForm.WorkAddress.value, "Address");
+	
+			
+			if (theForm.WorkCity) why += isEmpty(theForm.WorkCity.value, "City");
+			if (theForm.WorkState) why += isEmpty(theForm.WorkState.value, "State");
+			if (theForm.WorkZip) why += isEmpty(theForm.WorkZip.value, "Zipcode");
+			if (theForm.WorkCountry) why += checkDropdown(theForm.WorkCountry.value, "Country");
+			if (theForm.CAT_Custom_1313665) why += checkDropdown(theForm.CAT_Custom_1313665.value, "your Classification");
+			
+			if (why != "") {
+				alert(why);
+				return false;
+			}
+			if (submitcount89849 == 0) {
+				submitcount89849++;
+				theForm.submit();
+				return false;
+			} else {
+				alert("Form submission is in progress.");
+				return false;
+			}
+		}
+		 //]]>
+	</script>
+</form>
+<script type="text/javascript">
+	//<![CDATA[
+	var $j = jQuery.noConflict();
+	$j(function () {
+		$j('#state-workflowlist').change(function () {
+			var selected_item = $j(":selected", this).text()
+			$j('#WorkState').val(selected_item).addClass('hidden');
+		});
+	}); //]]>
+</script>
+
+<!-- End Quick COntact Content Holder -->
+
+
+	</div>
+</div>
+	<!-- MODAL -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+</div>  <!-- Expert  -->
+
+
+
+
+</div>  <!-- Quick Contact Form -->
+</div> <!-- SUB Containing Div -->
+
+
+
+
+
+</div><!-- Main Content -->
+
+
+
+
+
+<div class="footer-span">
+<div class="footer">
+{module_contentholder,2891007}
+<div class="clearboth"></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
+
+<script defer src="/js/jquery.flexslider.js"></script>
+<script>
+var $a = jQuery.noConflict();
+$a(window).load(function () {
+$a('.flexslider').flexslider({
+animation: "slide",
+controlNav: false,
+directionNav: false,
+useCSS: false,
+});
+});
+</script>
+
+
+<script>
+var $dm = jQuery.noConflict();
+$dm('#button').click(function() {
+$dm("#hidden-div").slideToggle('slow');
+return false;
+});
+</script>
+<script src="/js/jQuery.easing.js"></script>
+<script src="/js/jQuery.thumbFx.js"></script>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/*/
+var google_conversion_id = 966714499;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/*/
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/966714499/?value=0&amp;guid=ON&amp;script=0" />
+</div>
+</noscript>
+<script>
+var $a = jQuery.noConflict();
+
+$a(document).foundation();
+</script>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+
+<script src="http://s3.amazonaws.com/impressivewebs/mega-drop-downs/js/general.js?ver=2"></script>
+
+<script>
+var TxtRotate = function(el, toRotate, period) {
+this.toRotate = toRotate;
+this.el = el;
+this.loopNum = 0;
+this.period = parseInt(period, 10) || 2000;
+this.txt = '';
+this.tick();
+this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+var i = this.loopNum % this.toRotate.length;
+var fullTxt = this.toRotate[i];
+
+if (this.isDeleting) {
+this.txt = fullTxt.substring(0, this.txt.length - 1);
+} else {
+this.txt = fullTxt.substring(0, this.txt.length + 1);
+}
+
+this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+var that = this;
+var delta = 300 - Math.random() * 100;
+
+if (this.isDeleting) { delta /= 2; }
+
+if (!this.isDeleting && this.txt === fullTxt) {
+delta = this.period;
+this.isDeleting = true;
+} else if (this.isDeleting && this.txt === '') {
+this.isDeleting = false;
+this.loopNum++;
+delta = 500;
+}
+
+setTimeout(function() {
+that.tick();
+}, delta);
+};
+
+window.onload = function() {
+var elements = document.getElementsByClassName('txt-rotate');
+for (var i=0; i<elements.length; i++) {
+var toRotate = elements[i].getAttribute('data-rotate');
+var period = elements[i].getAttribute('data-period');
+if (toRotate) {
+new TxtRotate(elements[i], JSON.parse(toRotate), period);
+}
+}
+// INJECT CSS
+var css = document.createElement("style");
+css.type = "text/css";
+css.innerHTML = ".txt-rotate > .wrap { 10px; border-right: 0.08em solid #fff; text-shadow: 2px 2px 3px #080606; }";
+document.body.appendChild(css);
+};
+
+$(function(){
+var onClass = "on";
+var showClass = "show";
+
+$("input").bind("checkval",function(){
+var label = $(this).prev("label");
+if(this.value !== ""){
+label.addClass(showClass);
+} else {
+label.removeClass(showClass);
+}
+}).on("keyup",function(){
+$(this).trigger("checkval");
+}).on("focus",function(){
+$(this).prev("label").addClass(onClass);
+}).on("blur",function(){
+$(this).prev("label").removeClass(onClass);
+}).trigger("checkval");
+});
+</script>
+  
+ 
+<script>
+		jQuery("#banner").mousemove(
+		function(e){
+      
+			var offset = jQuery(this).offset();
+			var xPos = e.pageX - offset.left;
+			var yPos = e.pageY - offset.top;
+
+			var mouseXPercent = Math.round(xPos / jQuery(this).width() * 100);
+			var mouseYPercent = Math.round(yPos / jQuery(this).height() * 100);
+
+			jQuery(this).children('img').each(
+				function(){
+					var diffX = jQuery('#Parallax').width() - jQuery(this).width();
+					var diffY = jQuery('#Parallax').height() - jQuery(this).height();
+
+					var myX = diffX * (mouseXPercent / 1500);
+
+					var myY = diffY * (mouseYPercent / 1080);
+
+
+					var cssObj = {
+						'left': myX + 'px',
+						'top': myY + 'px'
+					}
+          
+					jQuery(this).animate({left: myX, top: myY},{duration: 50, queue: false, easing: 'linear'});
+
+				}
+			);
+
+		}
+	);
+	</script>
+	
+
+  
+
+<script>
+ new WOW().init();
+</script>
+
+<script>
+	$('#scrollbtn').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+	</script>
+
+
+
+</body>
+</html>
